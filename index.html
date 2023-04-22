@@ -9,58 +9,50 @@
     <script src="https://kit.fontawesome.com/f04d2644b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-  <div class="container">
-    <nav>
-      <img src="IMAGES/logoto.png" class="LOGO">
-      <ul>
-        <li><a href="#header"><i class="fa-solid fa-house"></i></a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>   
-        <li><a href="#contact">Contact</a></li>         
-      </ul>
-    </nav>
-    <div class="header-text">
-      <p>Graphic Designer</p>
-      <h1> Hi, I'm Jonathan <br> from the <span class="blue">Phi</span><span class="red">lli</span><span class="white">ppi</span><span class="yellow">nes</span></h1>
-    </div>
-  </div>
-</div>
-<!-------------------------------sidenav--------------------------------->
-
-<div class="navbar">
-    <ul>
-        <li><a href="#header"><i class="fa-solid fa-house"></i></a></li>
-        <li><a href="#About"><i class="fa-solid fa-address-card"></i></a></li>
-        <li><a href="#services"><i class="fa-solid fa-wrench"></i></a></li>
-        <li><a href="#portfolio"><i class="fa-brands fa-creative-commons-nd"></i></a></li>   
-        <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>         
-      </ul>
-</div>
-<!-------------------------------about--------------------------------->
-
-<div id="About">
-    <div class="container">
-        <div class="row">
-            <div class="about-column-1">
-                <img src="IMAGES/ako.png">
+    <button class="hamburger">&#9776;</button>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/logoto.png" class="LOGO">
+                <ul>
+                    <li><a href="#header"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>   
+                    <li><a href="#contact">Contact</a></li>         
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Graphic Designer</p>
+                <h1> Hi, I'm Jonathan <br> from the <span class="blue">Phi</span><span class="red">lli</span><span class="white">ppi</span><span class="yellow">nes</span></h1>
             </div>
-            <div class="about-column-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I'm a former teacher 
-                    who's now freelancing as a virtual assistant. 
-                    My years of experience in education have given me strong communication and organizational skills, 
-                    which are now proving invaluable in my current role. 
-                    Plus, my artistic background means I have a sharp eye for design and aesthetics,
-                    making my projects visually stunning.  My goal is to help you achieve your goals,
-                    and I can't wait to hear from you. So, whether you have questions or you're ready to discuss your next project, 
-                    please feel free to reach out and let's make it happen!"
-                </p>
+        </div>
+    </div>
+    <!-------------------------------sidenav--------------------------------->
+    <div class="navbar">
+        <ul>
+            <li><a href="#header"><i class="fas fa-home"></i></a></li>
+            <li><a href="#About"><i class="fas fa-address-card"></i></a></li>
+            <li><a href="#services"><i class="fas fa-wrench"></i></a></li>
+            <li><a href="#portfolio"><i class="fab fa-creative-commons-nd"></i></a></li>   
+            <li><a href="#contact"><i class="fas fa-phone"></i></a></li>         
+        </ul>
+    </div>
+    <!-------------------------------about--------------------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="IMAGES/about2.png">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a former teacher who's now freelancing as a virtual assistant. My years of experience in education have given me strong communication and organizational skills, which are now proving invaluable in my current role. Plus, my artistic background means I have a sharp eye for design and aesthetics, making my projects visually stunning. My goal is to help you achieve your goals, and I can't wait to hear from you. So, whether you have questions or you're ready to discuss your next project, please feel free to reach out and let's make it happen!"
+                    </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links"onclick="opentab('exp')">Experience</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experience</p>
                         <p class="tab-links" onclick="opentab('educ')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
@@ -102,10 +94,11 @@
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
+            <div class="service">
             <div>
                 <i class="fa-solid fa-palette"></i>
                 <h2>Graphic Designing</h2>
-                <p>jjkjdksjdksjdkjskdjskdksjdksdjksdjksjds</p>
+                <p> Offering graphic design services that will make your brand stand out! From logos and branding to marketing materials and web design, our team of talented designers will work with you to create visually stunning designs that capture your brand's personality. Let us help you take your business to the next level with our professional and modern graphic design services!</p>
                 <a href="#">Learn more</a>
 
             </div>
@@ -126,12 +119,13 @@
                 <a href="#">Learn more</a>
             </div>
         </div>
+        </div>
     </div>
 </div>
 <!-------------------------------portfolio--------------------------------->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Works</h1>
         <div class="work-list">
             <div class="work">
                 <video autoplay muted loop>
@@ -175,12 +169,12 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact me</h1>
-                <p><i class="fas fa-paper-plane"></i> jonathanmzap@gmail.com</p>
+                <p><i class="fas fa-paper-plane"></i> zap.jong04@gmail.com</p>
                 <p><i class="fa-solid fa-mobile-screen-button"></i> (+639)753523608</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100091898836530"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/jei.em.zii/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://twitter.com/ZapJong04"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
                 <a href="IMAGES/cv.jpg" download class="btn btn2">Download CV</a>
             </div>
