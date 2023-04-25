@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +43,7 @@
                 <div class="text-2">Jonathan </div>
                 <div class="text-4">from the <span class="blue">Phi</span><span class="red">li</span><span class="white">ppi</span><span class="yellow">nes</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#">Hire me</a>
+                <a href="#fields">Hire me</a>
             </div>
         </div>
     </section>
@@ -90,7 +89,7 @@
                             <br>@ Dalubhasaan ng Lungsod ng San Pablo</li>
                     </ul>
                 </div> 
-                <a href="#">Download CV</a>
+                <a href="IMAGES/jzcv.png"> Download CV</a>
             </div> 
             </div>
         </div>
@@ -159,14 +158,14 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>GOOGLE SUITE</span>
+                            <span>GOOGLE APPS</span>
                             <span>70%</span>
                         </div>
                         <div class="line GS"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>PHOTO/AUDIO/VIDEO EDITTING</span>
+                            <span>PHOTO/AUDIO/VIDEO EDITING</span>
                             <span>80%</span>
                         </div>
                         <div class="line PAV"></div>
@@ -304,25 +303,24 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+                    <form name="submit-to-google-sheet" id="fields">
+                        <input name="email" type="email" placeholder="Email" required>
+                        <input name="name" type="text" placeholder="Name" required>
+                        <input name="subject" type="text" placeholder="Subject">
+                        <input name="message" type="text" placeholder="Message">
+                        <button type="submit">Send Message</button>
+                      </form>
+                      <script>
+                        const scriptURL = "https://script.google.com/macros/s/AKfycbzwLo0pd4ponPIu8gfVmDrzoXikimzX2FBGDAV-y5TC82AF-HB9JGIL_MXXew7jhdjmlw/exec"
+                        const form = document.forms['submit-to-google-sheet']
+                      
+                        form.addEventListener('submit', e => {
+                          e.preventDefault()
+                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => console.log('Success!', response))
+                            .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
                 </div>
             </div>
         </div>
