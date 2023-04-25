@@ -230,7 +230,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "WHO I AM";
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -351,7 +351,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what I provide";
+    content: "waht I provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -467,7 +467,7 @@ section .title::after{
 }
 /* teams section styling */
 .works .title::after{
-    content: "what I did";
+    content: "what I do";
 }
 .works .carousel .card{
     background: #222;
@@ -541,7 +541,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "stay in touch";
+    content: "Let's Get in TOUCH";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -667,6 +667,12 @@ footer span a:hover{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
+    .home{
+        display: flex;
+        background: url("IMAGES/bgphone.gif") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .about .about-content .left img{
         height: 350px;
         width: 350px;
