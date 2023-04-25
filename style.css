@@ -208,26 +208,30 @@ section .title::after{
     color: yellowgreen;
     background: none;
 }
-.red {
+..red {
   color: red;
   font-size: 25px;
+  text-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000;
 }
 
 .blue {
   color: blue;
   font-size: 25px;
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0 0 5px #0000ff, 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 60px #0000ff;
 }
 
 .white {
   color: white;
   font-size: 25px;
+  text-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff;
 }
 
 .yellow {
   color: yellow;
   font-size: 25px;
+  text-shadow: 0 0 5px #ffff00, 0 0 20px #ffff00, 0 0 40px #ffff00, 0 0 60px #ffff00;
 }
+
 
 /*----------------------------------------------------------------------------------------about section styling */
 .about .title::after{
