@@ -48,6 +48,22 @@ $(document).ready(function(){
         loop: true
     });
 
+
+    //submit butn
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzwLo0pd4ponPIu8gfVmDrzoXikimzX2FBGDAV-y5TC82AF-HB9JGIL_MXXew7jhdjmlw/exec"
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      console.log('Success!', response);
+      form.reset(); // clears the form inputs
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
