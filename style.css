@@ -315,7 +315,7 @@ section .title::after{
   margin: 10px 20px;
   list-style-type: none;
   border-radius: 15px;
-  border: 3px solid yellowgreen;
+  border: 3px yellowgreen;
   }
   
   .tab-contents ul li{
