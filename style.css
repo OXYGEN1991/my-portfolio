@@ -463,15 +463,6 @@ section .title::after{
 .skills-content .right .PAV::before{
     width: 70%;
 }
-.skills-content .right .html::before{
-    width: 50%;
-}
-.skills-content .right .css::before{
-  width: 35%;
-}
-.skills-content .right .js::before{
-  width: 35%;
-}
 /*------------------------------------------------------------------------------ works section styling */
 .works .title::after{
     content: "what I do";
