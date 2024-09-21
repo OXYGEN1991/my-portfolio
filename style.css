@@ -345,7 +345,7 @@ section .title::after{
 
 /* ------------------------------------------------------------------------------------------services section styling */
 /* Main Services Section */
-.services{
+.services {
     background-color: #111; /* Services section background */
     padding: 80px 0;
     text-align: center;
@@ -363,13 +363,14 @@ section .title::after{
 }
 
 .services .service-container .box {
-    background-color: #fff ; /* Service box background color */
+    background-color: #fff; /* Service box background color */
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0 6px 12px #111; /* Adjust shadow for design consistency */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     max-width: 300px;
     flex: 1 1 300px;
+    text-align: center;
 }
 
 .services .service-container .box:hover {
@@ -398,8 +399,14 @@ section .title::after{
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .services .service-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack services vertically on mobile */
+        align-items: center; /* Center-align on mobile */
         gap: 20px;
+    }
+
+    .services .service-container .box {
+        width: 100%; /* Make service boxes full-width on mobile */
+        max-width: 100%; /* Prevent shrinking */
     }
 }
 
