@@ -375,7 +375,7 @@ section .title::after{
 
 .services .service-container .box:hover {
     transform: translateY(-10px); /* Hover effect */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Add depth on hover */
+    box-shadow: 0 12px 24px yellowgreen; /* Add depth on hover */
 }
 
 .services .service-container .box i {
@@ -395,21 +395,6 @@ section .title::after{
     color: #666; /* Body text color */
     line-height: 1.6;
 }
-
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-    .services .service-container {
-        flex-direction: column; /* Stack services vertically on mobile */
-        align-items: center; /* Center-align on mobile */
-        gap: 20px;
-    }
-
-    .services .service-container .box {
-        width: 100%; /* Make service boxes full-width on mobile */
-        max-width: 100%; /* Prevent shrinking */
-    }
-}
-
 
 /* skills section styling */
 
@@ -897,6 +882,19 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+}
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .services .service-container {
+        flex-direction: column; /* Stack services vertically on mobile */
+        align-items: center; /* Center-align on mobile */
+        gap: 20px;
+    }
+
+    .services .service-container .box {
+        width: 100%; /* Make service boxes full-width on mobile */
+        max-width: 100%; /* Prevent shrinking */
     }
 }
 
