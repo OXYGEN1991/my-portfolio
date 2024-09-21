@@ -49,7 +49,7 @@ $(document).ready(function(){
     });
 
     // Submit button
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzwLo0pd4ponPIu8gfVmDrzoXikimzX2FBGDAV-y5TC82AF-HB9JGIL_MXXew7jhdjmlw/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyfvt8saZ23OySg28CHYJo4-EuD03NM23yi36_rSwax4RywVSueJF6Hc2tKep6x5moZTw/execc";
     const form = document.forms['submit-to-google-sheet'];
 
     form.addEventListener('submit', e => {
