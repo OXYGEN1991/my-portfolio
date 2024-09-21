@@ -622,25 +622,60 @@ section .title::after{
     opacity: 1;
 }
 
+/* View More and Show Less button styling */
 .view-all-btn,
 .show-less-btn {
+    display: inline-flex; /* Use flexbox for better control */
+    align-items: center;  /* Vertically center text and icon */
+    justify-content: center; /* Horizontally center text */
     padding: 10px 20px;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 30px; /* Rounded buttons for a smoother appearance */
     background-color: yellowgreen;
     color: white;
     cursor: pointer;
-    display: inline-block;
     margin: 10px;
-    transition: background-color 0.3s;
-    width: 150px; /* Set a fixed width for the buttons */
-    height: 50px; /* Set a fixed height for the buttons */
-    line-height: 50px; /* Vertically center the text inside the buttons */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Added box-shadow and transform transitions */
+    width: 180px; /* Fixed width */
+    height: 50px; /* Fixed height for better alignment */
+    text-transform: uppercase; /* Make the text uppercase for impact */
+    font-weight: bold; /* Bold text for emphasis */
+    letter-spacing: 1px; /* Slight spacing between letters */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a floating effect */
+    position: relative; /* Prepare for icon positioning */
 }
 
+/* Icon inside the button */
+.view-all-btn::before,
+.show-less-btn::before {
+    content: ''; /* No icon here anymore, icon will be added separately */
+    margin-right: 10px; /* Spacing between the icon and text */
+}
+
+/* Hover effect for buttons */
 .view-all-btn:hover,
 .show-less-btn:hover {
-    background-color: darkgreen;
+    background-color: darkgreen; /* Darker shade on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow for a floating effect */
+    transform: translateY(-5px); /* Slightly lift the button on hover */
+}
+
+/* Specific arrow icons with positioning */
+.view-all-btn::after {
+    content: '▼'; /* Down arrow icon for View More */
+    margin-left: 10px;
+}
+
+.show-less-btn::after {
+    content: '▲'; /* Up arrow icon for Show Less */
+    margin-left: 10px;
+}
+
+/* Hover effect for the icon */
+.view-all-btn:hover::after,
+.show-less-btn:hover::after {
+    transform: rotate(180deg); /* Rotate the arrow on hover */
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Modal styles */
