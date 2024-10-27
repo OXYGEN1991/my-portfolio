@@ -477,7 +477,7 @@ section .title::after{
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 .works .carousel .card:hover{
     background: yellowgreen;
@@ -488,13 +488,13 @@ section .title::after{
     align-items: center;
     justify-content: center;
     color: #fff;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 .works .carousel .card:hover .box{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .works .carousel .card .text{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     margin: 7px 0 7px 0;
 }
@@ -504,7 +504,7 @@ section .title::after{
     object-fit: cover;
     border-radius: 10px;
     border: 1px solid yellowgreen;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 .works .carousel .card:hover img{
     border-color: #fff;
@@ -521,7 +521,7 @@ section .title::after{
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid yellowgreen;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }
 .works .carousel .card:hover video{
   border-color: #fff;
@@ -537,7 +537,7 @@ section .title::after{
     outline: none!important;
     border-radius: 50%;
     border: 2px solid yellowgreen!important;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 .owl-dot.active{
     width: 35px;
